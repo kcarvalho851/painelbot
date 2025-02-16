@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Painel de Relógios</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="panel">
+    <h2>Painel de Relógios</h2>
+    <button id="btnAdicionar">Adicionar Relógio</button>
+
+    <!-- Lista de Relógios -->
+    <div class="relogio-container" id="listaRelogios"></div>
+
+    <!-- Formulário de Adicionar Relógio -->
+    <div id="addRelogio" class="hidden">
+      <span id="closeButton" onclick="fecharAdicionarRelogio()">×</span>
+      <input type="text" id="nome" placeholder="Nome do Relógio" required><br>
+      <input type="text" id="descricao" placeholder="Descrição"><br>
+      <input type="number" id="valor" placeholder="Valor (R$)" min="0"><br>
+      <input type="file" id="imagem"><br>
+      <button onclick="adicionarRelogio()">Salvar</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

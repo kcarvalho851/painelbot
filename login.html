@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="login-container">
+    <h2>Login</h2>
+    <input type="text" id="username" placeholder="Usuário"><br>
+    <input type="password" id="password" placeholder="Senha"><br>
+    <button onclick="login()">Entrar</button>
+  </div>
+
+  <script>
+    function login() {
+      const user = document.getElementById("username").value;
+      const pass = document.getElementById("password").value;
+
+      // Validação simples de login
+      if (user === "carvalhoWATCHES" && pass === "CHwatches120702") {
+        // Redireciona para o painel de relógios
+        window.location.href = "painel.html";
+      } else {
+        alert("Usuário ou senha incorretos!");
+      }
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+.hidden {
+  display: none;
+}
+
+.panel {
+  display: block;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: auto;
+  margin-top: 80px; /* Adiciona um espaçamento superior para não colidir com o menu fixo */
+}
+
+button {
+  background: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+.relogio-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.relogio {
+  background: white;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  width: 200px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.relogio:hover {
+  transform: scale(1.05);
+}
+
+.relogio img {
+  width: 100px;
+  height: auto;
+}
+
+.opcoes {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #333;
+  color: white;
+  padding: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.menu {
+  display: none;
+  position: absolute;
+  top: 30px;
+  right: 10px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.menu button {
+  display: block;
+  width: 100%;
+  padding: 5px;
+  border: none;
+  background: none;
+  color: black;
+  text-align: left;
+}
+
+.menu button:hover {
+  background: #ddd;
+}
+
+#addRelogio {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  width: 80%;
+  max-width: 500px;
+}
+
+#addRelogio input {
+  margin: 5px 0;
+}
+
+#addRelogio button {
+  width: 100%;
+}
+
+#closeButton {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  color: #333;
+}
